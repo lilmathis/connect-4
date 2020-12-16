@@ -145,8 +145,8 @@ while not hasWon and not partie_nulle(g): # (pendant que) - on verifie que perso
                 continue # on recommence au point donner (while True 1)
 
             # On vérifie si le joueur 1 a gagner
-            for c in range(6):
-                for l in range(5): # avec les deux for inrange() on vérifie pour chaque valeur du tableau si la condition est vérifier
+            for c in range(7):
+                for l in range(6): # avec les deux for inrange() on vérifie pour chaque valeur du tableau si la condition est vérifier
                     if vict(g,1,l,c): # si la le jeu détecte que 4 pions du joueur 1 sont aligné quelque part sur la grille
                         print("Le joueur 1 a gagné bravo !")
                         hasWon = True # on met "a gagner" a vrai pour que le programme s'arrete
@@ -168,8 +168,8 @@ while not hasWon and not partie_nulle(g): # (pendant que) - on verifie que perso
                     continue # on recommence au point donner (while True 2)
 
                 # On vérifie si le joueur 2 a gagner
-                for c in range(6):
-                    for l in range(5): # avec les deux for inrange() on vérifie pour chaque valeur du tableau si la condition est vérifier
+                for c in range(7):
+                    for l in range(6): # avec les deux for inrange() on vérifie pour chaque valeur du tableau si la condition est vérifier
                         if vict(g,2,l,c):  # si la le jeu détecte que 4 pions du joueur 2 sont aligné quelque part sur la grille
                             print("Le joueur 2 a gagné bravo !")
                             hasWon = True # on met "a gagner" a vrai pour que le programme s'arrete
