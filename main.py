@@ -107,10 +107,10 @@ def vict(g,j,l,c):
 
 def partie_nulle(g):
     n = 0
-    for c in range(6):
+    for c in range(7):
         if g[5][c] != 0: # on regarde si dans la ligne 5 (derniere ligne) un pion est présent
             n += 1 # si oui, on incrimente le compteur de 1
-    if n == 6: # si le compteur atteint 6, toutes les cases sont remplies donc la partie est nulle
+    if n == 7: # si le compteur atteint 6, toutes les cases sont remplies donc la partie est nulle
         print("Partie nulle, personne gagne :(")
         return True
     else:
